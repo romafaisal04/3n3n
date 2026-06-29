@@ -1,0 +1,86 @@
+*{padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;}
+
+header{display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 4;
+        background-color:black;}
+
+    .logo {width: 170px; height: 100px;}
+
+     nav a {
+        color:rgb(254, 245, 232);
+        font-size: 20px;
+       margin-inline: 75px;
+       position: relative;}
+     
+    nav  a::after{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color:rgb(42 159 122);
+        transition: 0.75s;}
+
+    nav  a:hover:after{width: 100%;}
+
+body {background-color: rgb(0, 0, 0);}
+
+.main{margin: 50px;}
+
+    .main video{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    bottom: 75px;
+    left: 600px;}
+
+    .main a{font-size: 20px;
+    position: relative;
+    top: 415px;
+    color: rgb(254, 245, 232);
+    background-color: rgb(30 145 105);
+    border-radius: 20px;
+    padding: 15px 28px;
+    margin: 20px;
+    transition: .5s;}
+
+    .main a:hover{font-size: 22px;
+        color: #000;
+        background-color: rgba(67, 255, 189, 0.912);
+        box-shadow: 0 0 50px rgb(46, 177, 132);
+        transform: scale(1.1);}
+
+h1{color: #f1f1ba;
+    width: 900px;
+    position: relative;
+    top: 275px;
+    margin: 20px;}
+
+footer{margin-top: 60px; padding: 20px 40px; background-color: rgb(30, 71, 71); text-align: center; color:azure;}
+
+    .footer{display: flex; justify-content: space-between;}
+
+    .footer-box{text-align: left; max-width: 250px; display: flex; flex-direction: column;}
+
+    .social{display: flex; align-items: center;}
+
+    .social a{font-size: 24px; margin: 10px;}
+
+    .footer-box h3{color:antiquewhite; font-size: 20px; margin-bottom: 5px;}
+
+    .footer-box a , .footer-box p{margin-top: 10px; color: rgba(193, 105, 23, 0.793);}
+
+    .footer-box a:hover , .social a:hover{cursor: grab; color: rgba(227, 16, 16, 0.842);}
+
+    .up{width: 100px;height: 100px;margin-left: 40px;}
+
+    footer p{margin: 20px 0 5px;}

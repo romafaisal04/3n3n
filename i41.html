@@ -1,0 +1,123 @@
+ <!Doctype html>
+ <html>
+    <head><title>I4</title>
+    <link rel="stylesheet" href="tesla1.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></head>
+ <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <header>
+        <a href="electric1.html"><img src="material\logo.jpg" class="logo"></a>
+        <nav>
+            <a href="electric1.html#all_cars">ALL CARS</a>
+            <a href="#about_us">ABOUT US</a>
+        </nav></header>
+    <div class="first">
+    <h2 data-aos="fade-right" data-aos-duration="600" data-aos-delay="600">BMW Model I4 2024</h2>
+    <img src="material\i4png1.png" alt="i4" class="car" id="car">
+    <div class="cover" id="cover"><img src="material\red cover.png" data-aos="fade-left" data-aos-duration="800" data-aos-delay="800" onclick="remove()"></div>
+ </div>
+<script>
+    let car = document.getElementById("car");
+    let cover = document.getElementById("cover");
+    function remove(){cover.classList.add("remove-cover");
+    car.style.display = 'block';}
+</script>
+               <div class="main">
+                <div class="left">
+              <div class="main-img">
+              <img src="material\i4.avif" >
+            </div>
+                  <div class="photoes">
+               <img src="material\i4.avif" onclick="img(this.src)">
+                  <img src="material\i4 front.avif" onclick="img(this.src)">
+                  <img src="material\i4 interior.avif" onclick="img(this.src)">
+                  <img src="material\i4 back.avif"onclick="img(this.src)">
+               </div></div>
+              <script>
+                let mainImg = document.querySelector('.main-img img');
+                function img (pic){mainImg.src=pic}
+                </script>
+    <div class="right">
+        <div class="buy">
+            <h1>BMW I4</h1>
+            <h2>$53,195</h2>
+           <button onclick="display()">BUY NOW</button>
+           <img src="material\buy.png">      
+        </div>
+        <div class="highlights">
+    <h1>Highlights</h1>
+<ul><li> Type : Sedan Trim : eDrive35</li>      
+<li> Base MSRP : $53,195</li> 
+<li> EV Tax Credits & Rebates : $500</li>  
+<li> Engine Type : Electric</li> 
+<li> EPA Electric Range : 276 miles</li> 
+<li> Cost to Drive : $57/month</li> 
+<li> Total Charging Time (240V) : 7.0 hours</li> 
+<li> Seating : 5 seats</li> 
+<li> Cargo Capacity <sub>All Seats In Place</sub> : 10.0 cu.ft.</li> 
+<li> Drivetrain : Rear Wheel Drive</li> 
+<li> Warranty : 4 years / 50,000 miles</li> 
+<li> EV Battery Warranty : 8 years / 100,000 miles</li> 
+</ul><img src="material\highlights.png"></div>
+<div class="colors">
+    <h1>COLORS</h1>
+            <div class="color"> <img src="material\i4 Green.png"><h2>Green <br>Metallic</h2></div>
+            <div class="color"> <img src="material\i4 Red.png"><h2>Red <br>Metallic</h2></div>
+            <div class="color"> <img src="material\i4 Black.png"><h2>Black <br>Metallic</h2></div>
+    </div>
+<div class="vid">
+    <h1>VIDEO</h1>
+    <video src="material\i4.mp4" controls ></video></div>
+</div></div>
+<div class="manufacturer">
+    <img src="material\bmwlogo.png">
+    <h1>Manufacturer's History</h1>
+<p>BMW, which stands for Bayerische Motoren Werke, originated in 1916 as Bayerische Flugzeug-Werke, a builder of aircraft engines. It began producing motorcycles in the 1920s and entered the automobile business in 1928. The company's R32 motorcycle set a world speed record that stood until 19371. BMW was created from the Munich firm Rapp-Motorenwerke and was incorporated into Knorr-Bremse AG in 1920 before being refounded as BMW AG in 19222.</p>
+</div>
+<div id="out-popup">
+    <div id="popup">
+        <div id="close" onclick="hide()">x</div>
+        <div id="content">
+            <h1>Hello There</h1>
+            <p>To Complete Payment Process Please Choose Your Best Way!!!</p>
+            <img src="material\payment.png">
+        </div></div></div>
+<script>
+   let popup = document.getElementById('out-popup');
+    function display(){popup.style.display = 'block';}
+    function hide(){popup.style.display = 'none';}    
+</script>
+<footer data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" id="about_us">
+    <div class="footer">
+    <div class="footer-box">
+        <h3>About Us</h3>
+    <p>Welcome to our electric car wonderland!<br> Whether you’re a seasoned EV enthusiast or just dipping your toes into the electrifying world of sustainable transportation, our website is your gateway to all things electric.</p>
+      </div>
+    <div class="footer-box">
+    <h3>Page</h3>
+    <a href="electric1.html">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Privacy Policy</a>  
+    <a href="#">Legal Notice</a>
+    </div>
+    <div class="footer-box">
+        <h3>Help</h3>
+        <a href="#">Help Me</a>
+        <a href="#">Feedback</a>
+        <a href="#">Report</a><br>
+        <h3>Contact</h3>
+        <a href="#">+1 773 702 1000.</a>
+    </div>
+    <div class="footer-box">
+        <a href="i41.html"><img src="material\up.png" class="up"></a>
+        <div class="social">
+    <a href="#"><i class='bx bxl-facebook' style='color:#6358f5'></i></a>
+    <a href="#"><i class='bx bxl-twitter' style='color:#4583e5'></i></a>
+    <a href="#"><i class='bx bxl-instagram-alt' style='color:#d7196d'></i></a>
+    <a href="#"><i class='bx bxl-youtube' style='color:#dd1c1f'></i></a>
+    </div></div></div>
+<p>Copyright &copy 2024 All Rights Reserved | This template is made with ♥︎ by 3n3n car store</p>
+</footer></body></html>

@@ -1,0 +1,151 @@
+*{padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;}
+
+header{display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 4;
+        background-image:linear-gradient(to right ,black, rgba(30, 71, 71, 0.77));}
+
+        #search-icon{
+            font-size: 25px;
+            cursor: grab;
+            color:rgb(43 167 127);
+            padding-right: 90px;}
+
+        .search-box {
+            background: rgb(220, 202, 181);
+            box-shadow: 4px 4px 20px rgb(43 167 127);
+            border: 3px solid rgba(30, 71, 71, 0.736);
+            border-radius: 25px;
+            clip-path: circle(0% at 100% 0%); 
+            width: 500px;}
+            
+            .active{
+            clip-path: circle(145% at 100% 0%);
+            transition: 0.4s;}
+
+            .search-box input{
+            width: 100%;
+            padding: 13px;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 1rem;}
+
+    .logo {width: 170px; height: 100px;}
+
+     nav a {font-size: 20px;
+        color:rgb(254, 245, 232);
+       margin-inline: 75px;
+       position: relative;}
+     
+    nav  a::after{content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color:rgb(42 159 122);
+        transition: 0.75s;}
+
+    nav  a:hover:after{width: 100%;}
+
+body {background-image: url("material/banner2.jpg");
+          background-position: center ;
+          background-size: cover ;
+          background-repeat: no-repeat;
+          background-attachment: fixed;}
+
+.home{color: beige;
+        margin: 225px 50px;
+        font-size: 30px;}
+
+    .home p{width: 400px;}
+
+    h1{color:azure;width: 850px; margin-top: 80px;}
+
+    #all_cars h1 { color: beige;
+            padding: 100px 300px 0px ;
+            margin: 100px 0px 40px;
+            text-align: center;
+            font-size: 50px;}
+
+    .all_products{margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;}
+
+.product{padding: 25px;
+    margin: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(30, 71, 71, 0.736);
+    border: #19a088 solid 3px;
+    border-radius: 20px;
+    height: 470px;}
+
+    .product:hover{background-color: rgb(30, 71, 71);}
+
+    .model {height: 70px; width: 70px;padding: 10px 0px 25px;}
+
+    .car{width: 350px; height: 230px;}
+
+    .car:hover{transform: scale(1.1)}
+
+    .price{font-size: 27px;
+        background-color: #00ffd0;
+        border-radius: 20px;
+        color: #000;
+        padding: 12px 28px;
+        font-size: 20px;}
+    
+        .down{ margin-top: 20px;
+                    display: flex;
+                    justify-content: space-around;}
+        
+    .product a{ font-size: 20px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    background-color: rgb(50 100 106);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px 28px;
+    height: 30px;}
+ 
+    .product a:hover{color: #000;
+        background-color: #00ffd0;
+        box-shadow: 0 0 50px #00ffd0;
+        transition: .5s;}
+
+
+    h4 {margin-top: 15px; font-size: 25px;}
+
+footer{margin-top: 60px;
+    padding: 20px 40px;
+    background-color: rgb(30, 71, 71);
+    text-align: center; 
+    color:azure;}
+
+.footer{display: flex; justify-content: space-between;}
+
+    .footer-box{text-align: left; max-width: 250px; display: flex; flex-direction: column;}
+
+    .social{display: flex; align-items: center;}
+
+    .social a{font-size: 24px; margin: 10px;}
+
+    .footer-box h3{color:antiquewhite; font-size: 20px; margin-bottom: 5px;}
+
+    .footer-box a , .footer-box p{margin-top: 10px; color: rgba(193, 105, 23, 0.793);}
+
+    .footer-box a:hover , .social a:hover{cursor: grab; color: rgba(227, 16, 16, 0.842);}
+
+    .up{width: 100px;height: 100px;margin-left: 40px;}
+
+    footer p{margin: 20px 0 5px;}
