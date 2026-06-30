@@ -17,5 +17,3 @@ A modern and responsive front-end car dealership website built using **HTML, CSS
 
 🎥 **Demo**
 Check out the demo video in the **Demo** folder.
-
-⭐ If you like this project, don't forget to give it a star!
